@@ -1,0 +1,17 @@
+# Binary
+rdma-cdi
+
+# Test & coverage
+coverage.out
+coverage.html
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+AGENTS.md
+
+# OS
+.DS_Store
+Thumbs.db
