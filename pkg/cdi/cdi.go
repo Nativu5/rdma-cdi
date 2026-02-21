@@ -44,7 +44,7 @@ func SpecFileName(prefix, name, format string) string {
 // CreateCDISpec generates a CDI spec file for the given devices and writes it
 // to outputDir. The file is named according to SpecFileName().
 func CreateCDISpec(resourcePrefix, resourceName string, devices []types.RdmaDevice, outputDir, format string) error {
-	log.Infof("creating CDI spec for resource %q (prefix=%s)", resourceName, resourcePrefix)
+	log.Debugf("creating CDI spec for resource %q (prefix=%s)", resourceName, resourcePrefix)
 
 	cdiDevices := make([]cdiSpecs.Device, 0, len(devices))
 
@@ -96,7 +96,7 @@ func CreateCDISpec(resourcePrefix, resourceName string, devices []types.RdmaDevi
 		return fmt.Errorf("cannot write CDI spec file %s: %w", filePath, err)
 	}
 
-	log.Infof("CDI spec written to %s", filePath)
+	log.Debugf("CDI spec written to %s", filePath)
 	return nil
 }
 

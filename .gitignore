@@ -1,5 +1,5 @@
 # Binary
-rdma-cdi
+/rdma-cdi
 
 # Test & coverage
 coverage.out

@@ -32,6 +32,7 @@ make install          # installs to /usr/local/bin by default
 rdma-cdi discover                              # list all RDMA devices
 rdma-cdi discover --pci 0000:17:00.0           # query a single device (--ifname also works)
 
+rdma-cdi generate --all                        # generate specs for all RDMA devices
 rdma-cdi generate --pci 0000:17:00.0           # generate CDI spec (YAML, /etc/cdi)
 rdma-cdi generate --ifname ib0 --format json   # generate as JSON
 
